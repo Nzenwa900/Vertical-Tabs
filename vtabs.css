@@ -1,55 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+
+    --white: #fff;
+    --black: #010101;
+    --blue: #31326f;
+    --lightblue: #005490;
+    --primarycolor: #9d0191;
+    --secondarycolor: #db6400;
+    --gray: #eee;
+    --darkgray: #222831;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "open sans", sans-serif;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+}
 .container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 100px;
-}
-.text {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.tabs {
-    display: flex;
-    border: 1px solid gray;
-}
-.tabs-links {
-    width: 25%;
-}
-button.tabs-link {
-    padding: 12px;
-    width: 100%;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #353535;
-}
-.active {
-    background-color: pink;
-}
-.tab-contents {
-    padding: 10px;
-}
-.tab-content {
-    display: flex;
-    animation: slide-right .5s ease 1;
-}
-
-.about {
-    display: block;
-}
-
-@keyframes slide-right {
-    0% {
-        transform: translateX(-10rem);
-    }
-    100%{
-        transform: translateX(0);
-    }
 }
